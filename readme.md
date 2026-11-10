@@ -4,8 +4,17 @@ To start up the different containers individually.
 
 spark 3.3 with jupyter notebook
 
+The notebook image builds locally for your machine's architecture, including
+ARM64 on Apple Silicon. It uses Spark 3.3.1, Python 3.10, and Java 11.
+
 ```
-docker-compose up notebook
+docker compose up --build notebook
+```
+
+To print the notebook URL and login token:
+
+```
+docker compose exec notebook jupyter notebook list
 ```
 
 minio (s3-compatible storage layer)
