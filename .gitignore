@@ -1,0 +1,18 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Generated warehouse files
+/warehouse/*
+!/warehouse/.gitkeep
+
+# macOS
+.DS_Store
